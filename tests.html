@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Available Skill Tests</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><i class="fas fa-graduation-cap"></i></div>
+            <h1>SKILLUPRISE</h1>
+            <p>Choose a test to demonstrate your skills and earn a certificate</p>
+        </header>
+
+        <section class="card" id="test-list">
+            <h2 class="section-title">Available Skill Tests</h2>
+            <p>All tests are only ₹5!</p>
+
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-box" class="search-box" placeholder="Search for a course...">
+            </div>
+
+            <div class="test-grid" id="tests-grid">
+                <div class="test-card" data-test="dsa">
+                    <div class="test-header"><h3>Data Structures & Algorithms</h3><p>Problem-solving, coding interview prep</p></div>
+                    <div class="test-content">
+                        <div class="test-meta">
+                            <span><i class="far fa-clock"></i> 30 min</span>
+                            <span><i class="far fa-question-circle"></i> 10 questions</span>
+                        </div>
+                        <div class="price">₹5 only</div>
+                        <button class="btn btn-block start-test-btn" data-test="dsa">Start Test</button>
+                    </div>
+                </div>
+
+                <div class="test-card" data-test="cloud">
+                    <div class="test-header"><h3>Cloud Computing</h3><p>AWS, Azure, GCP - Essential for modern IT</p></div>
+                    <div class="test-content">
+                        <div class="test-meta">
+                            <span><i class="far fa-clock"></i> 25 min</span>
+                            <span><i class="far fa-question-circle"></i> 10 questions</span>
+                        </div>
+                        <div class="price">₹5 only</div>
+                        <button class="btn btn-block start-test-btn" data-test="cloud">Start Test</button>
+                    </div>
+                </div>
+
+                <div class="test-card" data-test="devops">
+                    <div class="test-header"><h3>DevOps Essentials</h3><p>CI/CD, containers, automation</p></div>
+                    <div class="test-content">
+                        <div class="test-meta">
+                            <span><i class="far fa-clock"></i> 20 min</span>
+                            <span><i class="far fa-question-circle"></i> 10 questions</span>
+                        </div>
+                        <div class="price">₹5 only</div>
+                        <button class="btn btn-block start-test-btn" data-test="devops">Start Test</button>
+                    </div>
+                </div>
+
+                <!-- Add additional test-cards here -->
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-links"><a href="index.html">Home</a> • <a href="certificate.html">Sample Certificate</a></div>
+            <p>&copy; <span id="year2"></span> SKILLUPRISE</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/tests.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
